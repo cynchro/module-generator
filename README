@@ -1,0 +1,3 @@
+composer require cynchro/module-generator:dev-main
+
+php vendor/bin/monolito generate:module ModuleName
