@@ -1,8 +1,16 @@
 {
-    "name": "bacoder/monolito-generator",
+    "name": "cynchro/module-generator",
     "description": "Generador de módulos para un monolito modular",
+    "keywords": ["monolito", "generador", "php"],
     "version": "1.0.0",
     "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexis",
+            "email": "alexissaucedo@gmail.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "MonolitoGenerator\\": "src/"
