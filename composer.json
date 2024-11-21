@@ -1,0 +1,15 @@
+{
+    "name": "bacoder/monolito-generator",
+    "description": "Generador de módulos para un monolito modular",
+    "version": "1.0.0",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "MonolitoGenerator\\": "src/"
+        }
+    },
+    "bin": ["bin/monolito"],
+    "require": {
+        "php": ">=7.4"
+    }
+}
