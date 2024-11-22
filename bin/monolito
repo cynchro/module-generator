@@ -115,16 +115,17 @@ class {$moduleName}Service
 
 PHP;
 
+$routeName = lcfirst($moduleName);
 $routeContent = <<<PHP
 <?php
 
 use App\Modules\\$moduleName\Controllers\\{$moduleName}Controller;
 
-\$router->get('/$moduleName', [{$moduleName}Controller::class, 'index']);
-\$router->get('/$moduleName/{id}', [{$moduleName}Controller::class, 'show']);
-\$router->post('/$moduleName', [{$moduleName}Controller::class, 'create']);
-\$router->put('/$moduleName/{id}', [{$moduleName}Controller::class, 'update']);
-\$router->delete('/$moduleName/{id}', [{$moduleName}Controller::class, 'delete']);
+\$router->get('/$routeName', [{$moduleName}Controller::class, 'index']);
+\$router->get('/$routeName/{id}', [{$moduleName}Controller::class, 'show']);
+\$router->post('/$routeName', [{$moduleName}Controller::class, 'create']);
+\$router->put('/$routeName/{id}', [{$moduleName}Controller::class, 'update']);
+\$router->delete('/$routeName/{id}', [{$moduleName}Controller::class, 'delete']);
 
 PHP;
 
